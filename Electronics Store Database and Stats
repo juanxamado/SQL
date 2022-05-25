@@ -1,0 +1,28 @@
+-- Create an electronics store database.  
+
+CREATE TABLE electronics (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, stock INTEGER, aisle INTEGER); 
+
+INSERT INTO electronics VALUES 
+(1, 'Keyboard', 35.99, 40, 1),
+(2, 'Mouse', 19.99, 50, 1),
+(3, 'Monitor', 45.99, 20, 1),
+(4, 'Desk', 99.99, 50, 2),
+(5, 'Office Chair', 45.99, 50, 2),
+(6, 'Computer Desktops', 899.99, 100, 1),
+(7, 'Laptops', 399.99, 100, 1),
+(8, 'Printers', 130.99, 70, 3),
+(9, 'Printer Ink', 14.99, 150, 3),
+(10, 'Printer Paper 100 Pack', 9.99, 200, 3),
+(11, 'Headphones', 19.99, 100, 4), 
+(12, 'Bluetooth Speakers', 29.99, 100, 4), 
+(13, 'Gel Pens', 2.99, 300, 5),
+(14, 'Mechanical Pencils', 1.99, 300, 5),
+(15, 'Erasers', 0.99, 400, 5);
+
+-- display the database ordered by price. 
+SELECT * FROM electronics 
+ORDER BY price DESC;
+
+-- display the sum of all the prices of each item. 
+SELECT SUM(price) 
+FROM electronics;
