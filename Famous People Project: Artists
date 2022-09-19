@@ -34,7 +34,12 @@ INSERT INTO top_songs (title, artist, artist_id, release_year) VALUES ("Hollywoo
 INSERT INTO top_songs (title, artist, release_year) VALUES ("Literal Legand", "Ayesha Erotica", 2020);
 INSERT INTO top_songs (title, artist, artist_id, release_year) VALUES ("Beez in the Trap", "Nicki Minaj", 7, 2012);
 
--- Then, I created a table consisting of northern states in the U.S. to reference for later joins 
+-- Then, I created a table consisting of northern states in the U.S. to reference for later joins
+
+CREATE TABLE northern_states 
+    (id INTEGER PRIMARY KEY AUTOINCREMENT, 
+    state_name TEXT, 
+    postal_id TEXT);
 
 INSERT INTO northern_states (state_name, postal_id) VALUES ("New York", "NY");
 INSERT INTO northern_states (state_name, postal_id) VALUES ("New Jersey", "NJ");
