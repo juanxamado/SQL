@@ -1,0 +1,69 @@
+-- First I created a table consisting of my favorite US singers
+
+CREATE TABLE favorite_US_singers(
+    id INTEGER PRIMARY KEY AUTOINCREMENT, 
+    name TEXT, 
+    home_state TEXT, 
+    birth_year INTEGER
+);
+
+INSERT INTO favorite_US_singers (name, home_state, birth_year) VALUES ("Lady Gaga", "NY", 1986);
+INSERT INTO favorite_US_singers (name, home_state, birth_year) VALUES ("Uffie", "FL", 1987);
+INSERT INTO favorite_US_singers (name, home_state, birth_year) VALUES ("Azealia Banks", "NY", 1991);
+INSERT INTO favorite_US_singers (name, home_state, birth_year) VALUES ("Grimes", "VBC", 1988);
+INSERT INTO favorite_US_singers (name, home_state, birth_year) VALUES ("Madonna", "MI", 1958);
+INSERT INTO favorite_US_singers (name, home_state, birth_year) VALUES ("Lila Tequila", "CA", 1994);
+INSERT INTO favorite_US_singers (name, home_state, birth_year) VALUES ("Britney Spears", "MS", 1981);
+INSERT INTO favorite_US_singers (name, home_state, birth_year) VALUES ("Nicki Minaj", "NY", 1982);
+INSERT INTO favorite_US_singers (name, home_state, birth_year) VALUES ("Demi Lovato", "NM", 1992);
+INSERT INTO favorite_US_singers (name, home_state, birth_year) VALUES ("Ayesha Erotica", "CA", 1996);
+
+-- Next I've created a small table of top ranked hits of some of these artists 
+
+CREATE TABLE top_songs
+    (id INTEGER PRIMARY KEY AUTOINCREMENT, 
+    title TEXT, 
+    artist TEXT, 
+    artist_id INTEGER, 
+    release_year INTEGER);
+  
+INSERT INTO top_songs (title, artist, artist_id, release_year) VALUES ("Oblivion","Grimes", 4, 2012);
+INSERT INTO top_songs (title, artist, release_year) VALUES ("Pop The Glock", "Uffie", 2010);
+INSERT INTO top_songs (title, artist, artist_id, release_year) VALUES ("Bad Romance", "Lady Gaga", 3, 2009);
+INSERT INTO top_songs (title, artist, artist_id, release_year) VALUES ("Hollywood", "Madonna", 5, 2004);
+INSERT INTO top_songs (title, artist, release_year) VALUES ("Literal Legand", "Ayesha Erotica", 2020);
+INSERT INTO top_songs (title, artist, artist_id, release_year) VALUES ("Beez in the Trap", "Nicki Minaj", 7, 2012);
+
+-- Then, I created a table consisting of northern states in the U.S. to reference for later joins 
+
+INSERT INTO northern_states (state_name, postal_id) VALUES ("New York", "NY");
+INSERT INTO northern_states (state_name, postal_id) VALUES ("New Jersey", "NJ");
+INSERT INTO northern_states (state_name, postal_id) VALUES ("Conneticut", "DE");
+INSERT INTO northern_states (state_name, postal_id) VALUES ("Illinois", "IL");
+INSERT INTO northern_states (state_name, postal_id) VALUES ("Massachusetts", "MA");
+INSERT INTO northern_states (state_name, postal_id) VALUES ("Michigan", "MI");
+INSERT INTO northern_states (state_name, postal_id) VALUES ("Maine", "ME");
+INSERT INTO northern_states (state_name, postal_id) VALUES ("Minnesota", "MN");
+INSERT INTO northern_states (state_name, postal_id) VALUES ("New Hampshire", "NH");
+INSERT INTO northern_states (state_name, postal_id) VALUES ("North Dakota", "ND");
+INSERT INTO northern_states (state_name, postal_id) VALUES ("South Dakota", "SD");
+INSERT INTO northern_states (state_name, postal_id) VALUES ("Pennsylvania", "PA");
+INSERT INTO northern_states (state_name, postal_id) VALUES ("Rhode Island", "RI");
+INSERT INTO northern_states (state_name, postal_id) VALUES ("Vermont", "VT");
+INSERT INTO northern_states (state_name, postal_id) VALUES ("Ohio", "OH");
+INSERT INTO northern_states (state_name, postal_id) VALUES ("Wisconsin", "WI");
+
+-- The first join, I compare how many of my favorite US artists made the top hits by joining both tables 
+
+SELECT fs.name as fav_artist, t.title as top_songs
+FROM favorite_US_singers fs
+JOIN top_songs t
+ON t.artist_id = fs.id;
+
+-- In the second join, I used the left outer join function to see how many of my favorite artists are from the northern states 
+
+SELECT fs.name, fs.home_state, ns.postal_id as northern_state
+FROM favorite_US_singers fs
+LEFT OUTER JOIN northern_states ns
+ON fs.home_state = ns.postal_id
+ORDER BY ns.postal_id DESC;
