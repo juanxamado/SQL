@@ -1,0 +1,28 @@
+-- This is a project from Khan Academy: 
+CREATE a table to store the data.
+INSERT a few example rows in the table.
+Use an UPDATE to emulate what happens when you edit data in the app.
+Use a DELETE to emulate what happens when you delete data in the app.
+
+
+CREATE TABLE tekken (id INTEGER PRIMARY KEY,
+    character_name TEXT, fighting_style TEXT, score INTEGER);
+
+INSERT INTO tekken VALUES 
+    (1, 'Lili', 'Kung-Fu/Gymnastics', 150000),
+    (2, 'Alisa', 'Robotics', 120000),
+    (3, 'Kunimistu', 'Ninjistsu', 100000),
+    (4, 'Eliza', 'Vampire', 90000),
+    (5, 'Xiaoyu', 'Martial Arts', 83000)
+    ;
+    
+SELECT * FROM tekken; 
+
+UPDATE tekken SET fighting_style = 'Karate', score = 125000
+WHERE id = 2; 
+
+SELECT * FROM tekken;
+
+DELETE FROM tekken WHERE id = 5; 
+
+SELECT * FROM tekken; 
