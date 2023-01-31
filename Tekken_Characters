@@ -1,0 +1,24 @@
+CREATE TABLE tekken_girls (
+    PersonID int,
+    CharacterName varchar(255),
+    FightingStyle varchar(255),
+    Origin varchar(255),
+    Eyes varchar (225),
+    Hair varchar (255),
+    GameAppearance varchar(255)
+);
+
+INSERT INTO tekken_girls (PersonID, CharacterName, FightingStyle, Origin, Eyes, Hair, GameAppearance)
+VALUES (1, 'Alisa Bosconovitch', 'Unique', 'Russia', 'Green', 'Red/Pink', 'Tekken 6/Tekken 7');
+INSERT INTO tekken_girls (PersonID, CharacterName, FightingStyle, Origin, Eyes, Hair, GameAppearance)
+VALUES (2, 'Angel', 'Mashima Style Fighting Karate', 'Unknown', 'Blue', 'Blonde', 'Tekken 2');
+INSERT INTO tekken_girls (PersonID, CharacterName, FightingStyle, Origin, Eyes, Hair, GameAppearance) 
+VALUES (3, 'Anna Williams', 'Aikido & Koppojutsu', 'Ireland', 'Blue', 'Black', 'Tekken/Tekken 7');
+INSERT INTO tekken_girls (PersonID, CharacterName, FightingStyle, Origin, Eyes, Hair, GameAppearance) 
+VALUES (4, 'Asuka Kazama', 'Kazama Style Traditional Martial Arts', 'Japan', 'Brown', 'Dark Brown', 'Tekken 5/Tekken 7); 
+INSERT INTO tekken_girls (PersonID, CharacterName, FightingStyle, Origin, Eyes, Hair, GameAppearance) 
+VALUES (5, 'Christie Monteiro', 'Capoeira', 'Brazil', 'Brown', 'Brown', 'Tekken 4/Tekken 6');
+INSERT INTO tekken_girls (PersonID, CharacterName, FightingStyle, Origin, Eyes, Hair, GameAppearance)
+VALUES (6, 'Eliza', 'Unknown', 'Unknown', 'Red', 'Black', 'Tekken Revolution'); 
+INSERT INTO tekken_girls (PersonID, CharacterName, FightingStyle, Origin, Eyes, Hair, GameAppearance)
+VALUES (7, 'Emilie De Rochefort', 'Gymnastics/Street Fighting', 'Monaco', 'Blue', 'Blonde', 'Tekken 5/ Tekken 7');
