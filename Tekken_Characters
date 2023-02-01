@@ -10,15 +10,70 @@ CREATE TABLE tekken_girls (
 
 INSERT INTO tekken_girls (PersonID, CharacterName, FightingStyle, Origin, Eyes, Hair, GameAppearance)
 VALUES (1, 'Alisa Bosconovitch', 'Unique', 'Russia', 'Green', 'Red/Pink', 'Tekken 6/Tekken 7');
+
 INSERT INTO tekken_girls (PersonID, CharacterName, FightingStyle, Origin, Eyes, Hair, GameAppearance)
 VALUES (2, 'Angel', 'Mashima Style Fighting Karate', 'Unknown', 'Blue', 'Blonde', 'Tekken 2');
+
 INSERT INTO tekken_girls (PersonID, CharacterName, FightingStyle, Origin, Eyes, Hair, GameAppearance) 
 VALUES (3, 'Anna Williams', 'Aikido & Koppojutsu', 'Ireland', 'Blue', 'Black', 'Tekken/Tekken 7');
+
 INSERT INTO tekken_girls (PersonID, CharacterName, FightingStyle, Origin, Eyes, Hair, GameAppearance) 
 VALUES (4, 'Asuka Kazama', 'Kazama Style Traditional Martial Arts', 'Japan', 'Brown', 'Dark Brown', 'Tekken 5/Tekken 7); 
+
 INSERT INTO tekken_girls (PersonID, CharacterName, FightingStyle, Origin, Eyes, Hair, GameAppearance) 
 VALUES (5, 'Christie Monteiro', 'Capoeira', 'Brazil', 'Brown', 'Brown', 'Tekken 4/Tekken 6');
+
 INSERT INTO tekken_girls (PersonID, CharacterName, FightingStyle, Origin, Eyes, Hair, GameAppearance)
 VALUES (6, 'Eliza', 'Unknown', 'Unknown', 'Red', 'Black', 'Tekken Revolution'); 
+
 INSERT INTO tekken_girls (PersonID, CharacterName, FightingStyle, Origin, Eyes, Hair, GameAppearance)
 VALUES (7, 'Emilie De Rochefort', 'Gymnastics/Street Fighting', 'Monaco', 'Blue', 'Blonde', 'Tekken 5/ Tekken 7');
+
+INSERT INTO tekken_girls (PersonID, CharacterName, FightingStyle, Origin, Eyes, Hair, GameAppearance) 
+VALUES (8, 'Josie Rizal', 'Eskrima/Kickboxing', 'Philippines', 'Brown', 'Brown', 'Tekken 7');
+
+INSERT INTO tekken_girls (PersonID, CharacterName, FightingStyle, Origin, Eyes, Hair, GameAppearance)
+VALUES (9, 'Julia Chang', 'Chang Kenpo/Baji Quan', 'USA', 'Brown', 'Brown', 'Tekken 3');
+
+INSERT INTO tekken_girls (PersonID, CharacterName, FightingStyle, Origin, Eyes, Hair, GameAppearance) 
+VALUES (10, 'Juan Kazama', 'Kazama Style Traditional Martial Arts', 'Japan', 'Brown', 'Black', 'Tekken 2'); 
+
+INSERT INTO tekken_girls (PersonID, CharacterName, FightingStyle, Origin, Eyes, Hair, GameAppearance)
+VALUES (11, 'Katarina Alvarez', 'Savate', 'Brazil', 'Brown', 'Light Aubrun', 'Tekken 7');
+
+INSERT INTO tekken_girls (PersonID, CharacterName, FightingStyle, Origin, Eyes, Hair, GameAppearance) 
+VALUES (12, 'Kazumi Mishima', 'Hachijo Style Karate/Mishima Style Fighting', 'Japan', 'Brown', 'Brown', 'Tekken 7');
+
+INSERT INTO tekken_girls (PersonID, CharacterName, FightingStyle, Origin, Eyes, Hair, GameAppearance) 
+VALUES (13, 'Kunimitsu', 'Manji Ninjitsu', 'Japan', 'N/A', 'Red', 'Tekken 1'); 
+
+INSERT INTO tekken_girls (PersonID, CharacterName, FightingStyle, Origin, Eyes, Hair, GameAppearance) 
+VALUES (14, 'Lidia Sabieska', 'Traditional Karate', 'Poland', 'Blue', 'Platinum', 'Tekken 7'); 
+
+INSERT INTO tekken_girls (PersonID, CharacterName, FightingStyle, Origin, Eyes, Hair, GameAppearance) 
+VALUES (15, 'Ling Xiaoyu', 'Chinese Marial Arts', 'China', 'Brown', 'Black', 'Tekken 3');
+
+INSERT INTO tekken_girls (PersonID, CharacterName, FightingStyle, Origin, Eyes, Hair, GameAppearance) 
+VALUES (16, 'Lucky Chloe', 'Freestyle Dance/Acrobatics', 'Japan', 'Aqua Blue', 'Blonde', 'Tekken 7');
+
+INSERT INTO tekken_girls (PersonID, CharacterName, FightingStyle, Origin, Eyes, Hair, GameAppearance) 
+VALUES (17, 'Master Raven', 'Ninjitsu', 'Unknown', 'Brown', 'Black with Blonde Highlights', 'Tekken 7');
+
+INSERT INTO tekken_girls (PersonID, CharacterName, FightingStyle, Origin, Eyes, Hair, GameAppearance) 
+VALUES (18, 'Michelle Chang', 'Chinese Fighting Arts', 'USA', 'Green', 'Brown', 'Tekken 2'); 
+
+INSERT INTO tekken_girls (PersonID, CharacterName, FightingStyle, Origin, Eyes, Hair, GameAppearance)
+VALUES (19, 'Miharu Hirano', 'Chinese Martial Arts', 'Japan', 'Brown', 'Auburn', 'Tekken 4')
+
+INSERT INTO tekken_girls (PersonID, CharacterName, FightingStyle, Origin, Eyes, Hair, GameAppearance)
+VALUES (20, 'Nina Williams', 'Aikido & Koppojutsu', 'Ireland', 'Blue', 'Blonde', 'Tekken 1')
+
+INSERT INTO tekken_girls (PersonID, CharacterName, FightingStyle, Origin, Eyes, Hair, GameAppearance)
+VALUES (21, 'Panda', 'Heihachi-style Improved', 'China', 'Black', 'White/Black', 'Tekken 3')
+
+INSERT INTO tekken_girls (PersonID, CharacterName, FightingStyle, Origin, Eyes, Hair, GameAppearance) 
+VALUES (22, 'Zafina', 'Ancient Assassination Arts', 'Egypt', 'Brown', 'Black', 'Tekken 6')
+
+
+
+
